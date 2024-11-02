@@ -1,0 +1,42 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    #max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .column {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .column {
+        flex-basis: 25%;
+    }
+}
