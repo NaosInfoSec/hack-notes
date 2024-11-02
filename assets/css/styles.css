@@ -22,6 +22,11 @@ body {
     box-sizing: border-box;
 }
 
+/* Specific styles for the second column */
+.column-2 {
+    flex-basis: 25%;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .column {
@@ -38,5 +43,18 @@ body {
 @media (min-width: 1025px) {
     .column {
         flex-basis: 25%;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    /* Hide the second column on smaller screens */
+    .column-2 {
+        display: none;
+    }
+
+    /* Other columns take up full width on smaller screens */
+    .column {
+        flex-basis: 100%;
     }
 }
