@@ -1,32 +1,32 @@
-<!doctype html>
-<html>
-        <head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
         <!-- Google tag (gtag.js) -->
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-SB7KYYH1WD"></script>
-                <script>
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-SB7KYYH1WD');
-                </script>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-SB7KYYH1WD"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-SB7KYYH1WD");
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <title>{{ page.title }}</title>
-                {% include favicon.html %}
-                <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-  <div class="container">
-        <div class="row">
-        {% include navigation.html %}
-        </div>
-        <div class="row">
-            <div class="column">
-            {{ content }}
+        <title>{{ page.title }}</title>
+        {% include favicon.html %}
+        <link rel="stylesheet" href="/assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">{% include navigation.html %}</div>
+            <div class="row">
+                <div class="column">{{ content }}</div>
             </div>
-            <!--div class="column column-2">Content 2</div-->
         </div>
-    </div>
-  </body>
+    </body>
 </html>
