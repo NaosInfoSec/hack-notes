@@ -3,15 +3,42 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
+}
+
+pre {
+    text-wrap: auto;
+    font-size: large;
+}
+
+img {
+    max-width: 500px;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+ul,
+li,
+pre,
+em {
+    color: greenyellow;
+}
+
+p {
+    text-align: justify;
 }
 
 .nav {
-        margin-top: 0px;
-        margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .container {
-    #max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -34,6 +61,9 @@ body {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
     .column {
         flex-basis: 100%;
     }
